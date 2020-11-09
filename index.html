@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Humanitarian Development Projects Data Portal</title>
+<meta name="description" content="UN-Habitat"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/words.css"/>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic|Playfair+Display:400,700,400italic,700italic"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+text-box {
+  background: rgba(0,0,205,0.8);
+   position: absolute;
+  right: 0px;
+  bottom:0;
+  width: 300px;
+
+  padding: 20px;
+  margin: 20px;
+}
+</style>
+<style>
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text-slide {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<style>
+text {
+
+  float: center;
+  width: 30%;
+  height: auto; /* only for demonstration, should be removed */
+
+  padding: 20px;
+}
+</style>
+
+<style>
+base {
+  float: left;
+  padding: 20px;
+  width: 100%;
+    background: white;
+
+   /* only for demonstration, should be removed */
+}
+</style>
+<style>
+section-z {
+  position: absolute;
+  right: 112px;
+  width: 300px;
+  background: darkblue;
+  padding: 20px;
+    overflow: auto;
+
+   /* only for demonstration, should be removed */
+}
+</style>
+<style>
+section-y {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height:500px;
+    background: lightblue;
+      overflow: auto;
+
+   /* only for demonstration, should be removed */
+}
+</style>
+
+
+
+<style>
+      .square-flip{
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform: perspective(1000px);
+    transform: perspective(1000px);
+
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+    transform-style: preserve-3d; 
+
+    /*border:1px solid #efefef;*/
+    
+    position:relative;
+    float:left;
+    margin:20px;
+
+    }
+    .square-flip{
+      width:400px;
+      height:400px;
+    }
+    .square,.square2{
+      width:100%;
+      height:100%;
+    }
+    .square{
+
+      background-size: cover;
+      background-position:center center;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+      overflow: hidden;
+
+      position:absolute;
+      top:0;
+
+
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+    }
+    .square-flip .square{
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+      z-index:1;
+    }
+    .square-flip:hover .square{
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      transform-style: preserve-3d;
+    }
+
+
+    .square2{
+
+      background-size: cover;
+      background-position:center center;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+      overflow: hidden;
+
+      position:absolute;
+      top:0;
+
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+    }
+    .square-flip .square2{
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+      z-index:1;
+    }
+    .square-flip:hover .square2{
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+    }
+
+    /*Square content*/
+    .square-container{
+      padding:40px;
+      text-align:center;
+      position:relative;
+      top:50%;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+
+    
+      -webkit-transform: translateY(-50%) translateX(0px)  scale(1);
+      -ms-transform: translateY(-50%) translateX(0px)  scale(1);
+  transform: translateY(-50%) translateX(0px)  scale(1);
+      transform-style: preserve-3d;
+      z-index:2;
+    }
+    .square-flip:hover .square-container{
+      
+      -webkit-transform: translateY(-50%) translateX(-650px)  scale(.88);
+      -ms-transform: translateY(-50%) translateX(-650px)  scale(.88);
+      transform: translateY(-50%) translateX(-650px)  scale(.88);
+      transform-style: preserve-3d;
+
+    }
+
+    .square-container2{
+      padding:40px;
+      text-align:center;
+      position:relative;
+      top:50%;
+
+      -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+          -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+
+      
+      -webkit-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+      -ms-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+      transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+
+      transform-style: preserve-3d;
+      z-index:2;
+    }
+    .square-flip:hover .square-container2{
+      
+      -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+      -ms-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+      transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+      transform-style: preserve-3d;
+    }
+
+
+
+    /*Style text*/
+    .square-flip h2{
+      color:white;
+      font-family: "Open Sans";
+      font-weight:700;
+      font-size:22px;
+    }
+    .square-flip h3{
+      color:white;
+      font-family: "Open Sans";
+      font-weight:500;
+      font-size:16px;
+      line-height:26px;
+    }
+    /*Elements*/
+    .flip-overlay{
+      display:block;
+      background:linear-gradient(60deg, blue 0%, #29323c 100%);
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+    }
+    .align-center{
+      margin:0 auto;
+    }
+    .kallyas-button{
+      display:block;
+      width:160px;
+      padding:18px 30px;
+      font-family:"Open Sans";
+      font-weight:600;
+      color:#fff;
+      background:#FF2024;
+      margin:0 auto;
+      border-radius:2px;
+      text-decoration:none;
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa067+0,ff2959+49,ff2024+100 */
+      background: #ffa067; /* Old browsers */
+      background: -moz-linear-gradient(-45deg,  #ffa067 0%, #ff2959 49%, #ff2024 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg,  #ffa067 0%,#ff2959 49%,#ff2024 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg,  #ffa067 0%,#ff2959 49%,#ff2024 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa067', endColorstr='#ff2024',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+
+    /*ADD SHADOWS OPTIONAL*/
+    .square-flip .square .boxshadow, .square-flip .square .textshadow, .square-flip .square2 .boxshadow, .square-flip .square2 .textshadow{
+      -ms-transition: 0.60s;
+          transition: 0.60s;
+          -webkit-transition: 0.60s;
+    }
+
+    .square-flip .square .boxshadow{
+      -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+    }
+    .square-flip .square .textshadow{
+      -webkit-text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      -moz-text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      text-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+    }
+    .square-flip:hover .square .boxshadow, .square-flip:hover .square .textshadow{
+      -webkit-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      -moz-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+    }
+
+
+    .square-flip .square2 .boxshadow{
+      -webkit-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      -moz-box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      box-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+    }
+    .square-flip .square2 .textshadow{
+      -webkit-text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      -moz-text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+      text-shadow: 240px 42px 58px -8px rgba(0,0,0,0.0);
+    }
+    .square-flip:hover .square2 .boxshadow, .square-flip:hover .square2 .textshadow{
+      -webkit-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      -moz-box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+      box-shadow: 24px 42px 58px -8px rgba(0,0,0,0.3);
+    }
+
+    
+    /*You can delete this style*/
+    .centerflipcards{
+      display:block;
+      width:1330px;
+      height:440px;
+      text-align:center;
+      margin:0 auto;
+      margin-top:25px;
+    }
+.clearfix{clear:both;}
+.centerflipcards p{
+      font-family:"Open Sans";
+      font-size:13px;
+      margin-top:10px;
+      font-weight:700;
+}
+</style>
+<style>
+  @import url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/library.less");
+@import url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/variables.less");
+@body: #252830;
+
+.container-fluid {
+  .center;
+  width: 100%;
+}
+
+.media {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+figure {
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  &:hover .media {
+    transform: scale(1.25);
+  }
+}
+
+figcaption {
+  color: @body;
+  height: ~"calc(100% - 30px)";
+  margin: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+
+.body {
+  background-color: white;
+  bottom: 0;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+}
+
+svg {
+  height: inherit;
+  width: 100%;
+  text {
+    text-anchor: middle;
+  }
+  #alpha {
+    fill: white;
+  }
+  .title {
+    font-size: 28px;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+  }
+  #base {
+    fill: white;
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+  }
+}
+</style>
+
+<body class="home-template">
+<div class="site-wrapper">
+  <nav class="main-nav overlay clearfix">
+  <a class="blog-logo" href="index.html"><img src="assets/img/unhabitatlogo.png" width="10" height="12" 10t="unhabitatlogo.png"/></a>
+  <ul>
+    <li class="nav-home nav-current" role="presentation"><a href="index.html">Home</a></li>
+    <li class="nav-article-example" role="presentation"><a href="profiles.html">Story Board</a></li>
+    <li class="nav-about-us" role="presentation"><a href="Kenya.html">Spatial Visualization</a></li>
+
+  </ul>
+  </nav>
+    <header class="main-header ">
+  <div class="vertical">
+    <div class="main-header-content inner">
+      <h1 class="page-title">Settlement Profile Data Portal</h1>
+
+
+
+
+      <text>UN-Habitat</text>
+
+<text> 
+  <span>For a better Urban Future</span>
+</text>
+    </div>
+  </div>
+  <a class="scroll-down icon-arrow-left" href="#secondsection" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+  </header>
+    <header id="secondsection">
+<div class="header">
+  <map>
+  </map>
+  <h1 style="text-align:center">Story</h1>
+  <body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="assets/img/kakuma.jpg" width="100%" height="600px">
+  <text-box><p style="color:white">Caption 1</p></text-box>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="assets/img/dadaab.jpg" width="100%" height="600px">
+  <text-box><p style="color:white">Caption 2</p></text-box>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="assets/img/qoloji.jpg" width="100%" height="600px">
+  <text-box><p style="color:white">Caption Three</p></text-box>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+  </header
+  <header id="thirdsection">
+<div class="header">
+  <map>
+  </map>
+  <h1 style="text-align:center">Projects Locations</h1>
+  </header>
+  <body>
+    <div class="centerflipcards">
+  <div class="square-flip" >
+    <div class='square' data-image="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb">
+      <div class="square-container">
+        <div class="align-center"><img src="assets/img/kakuma.jpg" class="boxshadow" alt=""></div>
+        <h2 class="textshadow">Kakuma Kalobeyei</h2>
+        <h3 class="textshadow"></h3>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+    <div class='square2' data-image="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb">
+      <div class="square-container2">
+        <div class="align-center"></div>
+        <h2>About Kakuma-Kalobeyei</h2>
+      </div>
+           <a class="scroll-down icon-arrow-left" href="#TurkanaProject" data-offset="-45"><span class="hidden">Scroll Down</span></a>      
+      <div class="flip-overlay"></div>
+    </div>
+  </div>
+
+  <div class="square-flip">
+    <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container">
+        <div class="align-center"><img src="assets/img/dadaab.jpg" class="boxshadow" alt=""></div>
+        <h2 class="textshadow">Dadaab</h2>
+        <h3 class="textshadow"> </h3>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+    <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container2">
+        <div class="align-center"></div>
+        <h2>About Dadaab.</h2>
+           </div>
+           <a class="scroll-down icon-arrow-left" href="#DadaabProject" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+      <div class="flip-overlay"></div>
+    </div>
+  </div>
+
+  <div class="square-flip">
+    <div class='square' data-image="https://instagram.fotp3-2.fna.fbcdn.net/t51.2885-15/e35/14712096_386502691740262_2357154798815412224_n.jpg?ig_cache_key=MTM2NzU2MzUwNjQ3OTUzOTgxNQ%3D%3D.2">
+      <div class="square-container">
+        <div class="align-center"><img src="assets/img/qoloji.jpg" class="boxshadow" alt=""></div>
+        <h2 class="textshadow">Qoloji</h2>
+        <h3 class="textshadow"></h3>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+    <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-wedding.jpg">
+      <div class="square-container2">
+        <div class="align-center"></div>
+        <h2>About Qoloji.</h2>
+      </div>
+           <a class="scroll-down icon-arrow-left" href="#QolojiProject" data-offset="-45"><span class="hidden">Scroll Down</span></a>      
+      <div class="flip-overlay"></div>
+    </div>
+  </div>
+  
+ 
+</div>
+
+
+
+
+    
+  </body>
+ <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title" style="text-align:center">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item"  id = "TurkanaProject" >
+          <div class="project-info">
+            <u><h1 style="color:white">About Kakuma Kalobeyei Project</h1></u>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div  class="project-img"  >
+   <img src="assets/img/kakuma.jpg" width="100%" height="100%"></img>
+          </div>
+        </div>
+        <div class="project-item"  id = "DadaabProject" >
+          <div class="project-info">
+            <u><h1 style="color:white">About Dadaab Project</h1></u>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+               <img src="assets/img/dadaab.jpg" width="100%" height="100%"></img>
+
+          </div>
+        </div>
+        <div class="project-item"  id = "QolojiProject" >
+          <div class="project-info">
+            <u><h1 style="color:white">About Qoloji Project</h1></u>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+                           <img src="assets/img/qoloji.jpeg" width="100%" height="100%"></img>
+ 
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+  <base>
+
+  </base>
+  <script>
+    jQuery(document).ready(function($) {
+
+  //Count nr. of square classes
+  var countSquare = $('.square').length;
+
+  //For each Square found add BG image
+  for (i = 0; i < countSquare; i++) {
+    var firstImage = $('.square').eq([i]);
+    var secondImage = $('.square2').eq([i]);
+
+    var getImage = firstImage.attr('data-image');
+    var getImage2 = secondImage.attr('data-image');
+
+    firstImage.css('background-image', 'url(' + getImage + ')');
+    secondImage.css('background-image', 'url(' + getImage2 + ')');
+  }
+
+
+});
+  </script>
+
+  <footer class="site-footer clearfix">
+  <a href="#top" id="back-to-top" class="back-top"></a>
+  <div class="text-center">
+    <a href="index.html">Settlement Profiles</a> &copy; 2020<br/>
+    by <a>UNHABITAT</a>
+  </div>
+  </footer>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/masonry.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
+  <script src="assets/js/app.js"></script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
